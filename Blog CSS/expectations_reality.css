@@ -1,0 +1,104 @@
+#college-life{
+    padding: 15px;
+    background-color: rgb(108, 106, 106);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#college-life img{
+    width: 100%;
+    box-shadow: 1px 5px 20px 6px black;
+    /* border-radius: 3px; */
+}
+
+
+
+#exp-reality{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+
+}
+
+#expectations{
+    width: 47%;
+    background-color: rgb(102, 100, 100);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 15px 9px rgb(56, 54, 54);
+    border-radius: 5px;
+}
+.exp-real-card img{
+    width: 60%;
+    margin: 8px 0px;
+    box-shadow: 3px 3px 12px 5px black;
+    border-radius: 3px;
+    
+}
+.exp-real-card img:hover{
+    transform: scale(1.5);
+    transition: transform 0.8s;
+    cursor: pointer;
+}
+
+#expectations h1{
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    text-shadow: 2px 2px 5px rgb(191, 188, 188);
+
+}
+
+#reality{
+    width: 47%;
+    background-color: rgb(76, 74, 74);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 15px 9px rgb(56, 54, 54);
+    border-radius: 5px;
+}
+
+#reality h1{
+    text-align: center;
+    color: white;
+    font-family: 'Unbounded', cursive;
+    text-shadow: 2px 2px 5px rgb(10, 9, 9);
+}
+
+.exp-real-card{
+    width: 95%;
+    border-radius: 8px;
+    background-color: rgb(197, 194, 194);
+    padding: 15px;
+    margin: 5px 0px;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.horizontal-exp-ray-btw-divs{
+    margin-left: 15px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.horizontal-real-ray-btw-divs{
+    margin-right: 15px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+

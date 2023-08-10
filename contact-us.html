@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/expectations_reality.css">
+    <link rel="stylesheet" href="/CSS/main-display.css">
+    <link rel="shortcut icon" href="myicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/CSS/desc-intro.css">
+    <link rel="stylesheet" href="/CSS/social-media.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/Contact-us/contact.css">
+    <title>Contact - Khateeb</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&family=Ubuntu&family=Unbounded&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+      scroll-behavior: smooth;
+    }
+
+
+    @media only screen and (max-width: 425px) {
+
+      /* For smartphones */
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+      }
+
+
+      #marquee {
+        font-size: 10px;
+        background-color: rgb(70, 69, 69);
+        color: white;
+        text-shadow: 3px 3px 6px black;
+      }
+
+      .blink {
+        animation: blinker 5s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 1;
+        }
+      }
+
+      #contact-us-main h1, h2, a{
+        font-size: 14px;
+      }
+
+      #social-media {
+        flex-direction: column;
+      }
+
+      #social-media div {
+        margin: 10px 0px;
+      }
+    }
+
+    @media only screen and (min-width: 425px) and (max-width: 912px) {
+
+      /* For all size tabs */
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .navbar ul {
+        margin-left: 0;
+      }
+
+      
+      #marquee {
+        font-size: 13px;
+        background-color: rgb(70, 69, 69);
+        color: white;
+        text-shadow: 3px 3px 6px black;
+      }
+
+      #contact-us-main h1, h2, a{
+        font-size: 20px;
+      }
+
+      #social-media {
+        flex-direction: column;
+      }
+
+      .social-media-cards {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50vw;
+        height: auto;
+        margin: 10px 0px;
+      }
+
+      .social-handle {
+        display: none;
+      }
+
+    }
+
+    @media only screen and (min-width: 912px) and (max-width: 1024px) {
+
+      /* For small size lappy */
+      .social-media-cards {
+        width: 15vw;
+        height: 25vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 15px;
+      }
+
+      .social-link {
+        font-size: 1rem;
+      }
+
+      #marquee{
+        background-color: rgb(70, 69, 69);
+        color: white;
+        text-shadow: 3px 3px 6px black;
+      }
+
+    }
+
+    @media only screen and (min-width: 1450px) {
+
+      /* For big size lappys */
+      .navbar {
+        font-size: 2rem;
+      }
+
+
+      #marquee {
+        font-size: 30px;
+        background-color: rgb(70, 69, 69);
+        color: white;
+        text-shadow: 3px 3px 6px black;
+      }
+
+      .social-media-cards {
+        margin: 10px 20px;
+      }
+
+      #social-media-section h2 {
+        color: white;
+      }
+
+    }
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/images/mylogo.jpg" alt="My Logo">
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#desc-intro">About Me</a></li>
+          <li><a href="/myBlogs.html">My Blogs</a></li>
+          <li><a href="/contact-us.html">Contact Me</a></li>
+        </ul>
+      </nav>
+
+      <section id="marquee">
+        <marquee behavior="scroll" direction="left" width="100%" scrollamount="6" class="blink">This page will be visible after a month. For "Home page"<a href="/Blog HTML/expec-vs-reality.html">Click here</a> and for "College expectations vs reality"<a href="/Blog HTML/expec-vs-reality.html">Click Here..</a></marquee>
+      </section>
+
+      <section id="contact-us-main">
+        <h1>404 - NOT FOUND!</h1>
+        <h2>For home page <a href="/index.html">Click Here</a></h2>
+        <h2>For College Expectation vs Reality <a href="/Blog HTML/expec-vs-reality.html">Click Here</a></h2>
+      </section>
+
+      <section id="social-media-section">
+        <h2>My Social Media Links</h2>
+        <div id="social-media">
+
+            <div class="social-media-cards" id="LinkedIN">
+                <div class="icon-class">
+                    <img src="/social-media-icons/linkedIn.png" alt="LinkedIn">
+                </div>
+                <p class="social-handle">LinkedIN</p>
+                <p class="social-link"><a href="https://www.linkedin.com/in/md-khateebur-rab-143862190/">Md Khateebur
+                        Rab</a>
+                </p>
+            </div>
+
+            <div class="social-media-cards" id="GitHub">
+                <div class="icon-class">
+                    <img src="/social-media-icons/github.png" alt="GitHub">
+                </div>
+                <p class="social-handle">GitHub</p>
+                <p class="social-link"><a href="https://github.com/imkhateeb">Md Khateebur Rab</a></p>
+
+
+            </div>
+
+            <div class="social-media-cards" id="Instagram">
+                <div class="icon-class">
+                    <img src="/social-media-icons/instagram.svg" alt="Instagram">
+                </div>
+                <p class="social-handle">Instagram</p>
+                <p class="social-link"><a href="https://www.instagram.com/iamkhateeb_/">iamkhateeb_</a></p>
+            </div>
+
+            <div class="social-media-cards" id="Twitter">
+                <div class="icon-class">
+                    <img src="/social-media-icons/twitter.png" alt="twitter">
+                </div>
+                <p class="social-handle">Twitter</p>
+                <p class="social-link"><a href="https://twitter.com/iamkhateeb_">Md Khateebur Rab</a></p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <p>All rights reserved by Md Khateebur Rab @iamkhateeb_.</p>
+        <p><a href="https://iconscout.com/icons/github" target="_blank">Github Icon</a> by <a
+                href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a></p>
+        <p> Photo by Vanessa Garcia : https://pexels.com/search/professor/ </p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

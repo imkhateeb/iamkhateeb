@@ -1,0 +1,135 @@
+#desc-intro {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    box-shadow: 2px 6px 20px 20px rgb(7 7 7 / 100%);
+    margin: 10px 0px;
+
+}
+
+#desc-intro-heading {
+    text-align: center;
+    width: 15vw;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    border: 2px dotted grey;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(36, 36, 36);
+
+}
+
+.intro-cards {
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    box-shadow: 1px 5px 20px 6px rgb(36, 36, 36);
+}
+
+
+.intro-heading {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.intro-images img {
+    width: 26vw;
+    box-shadow: 1px 5px 20px 6px black;
+    margin: 5px 10px;
+    z-index: 100;
+}
+
+.intro-images img:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+    left: 40px;
+    cursor: pointer;
+}
+
+.intro-info {
+    padding: 10px;
+}
+
+.intro-info a {
+    color: rgb(13, 227, 13);
+}
+
+.intro-info div {
+    margin: 8px 3px;
+    background-color: rgb(71, 68, 68);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.intro-info h4 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(198, 41, 41);
+
+}
+
+#tech-stacks {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tech-stack-info p {
+    font-family: 'Source Code Pro', monospace;
+}
+#technical-society-wings a{
+    text-decoration: none;
+}
+#house-of-geeks a{
+    text-decoration: underline;
+}
+
+#school {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2rem;
+}
+#school p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+#college {
+    display: flex;
+    justify-content: space-between;
+}
+#college p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+#college-logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+#college-logo img {
+    width: 145px;
+    height: 145px;
+    margin: auto;
+}
+
+#extra-curriculars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2rem;
+}
+#extracurriculars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

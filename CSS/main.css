@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #c9b396;
+  color: rgb(25, 25, 25);
+  display: flex;
+  padding: 6px 0px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  position: sticky;
+  top: 0;
+  box-shadow: inset -1px -1px 5px 5px rgb(22, 22, 22);
+  z-index: 1;
+
+}
+
+.navbar ul {
+  display: flex;
+  margin-left: 5vh;
+
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 15px 6px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(220, 208, 192);
+  /* border: 1px solid grey; */
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in;
+}
+
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+

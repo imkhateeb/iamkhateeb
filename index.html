@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/main.css">
+  <link rel="stylesheet" href="/CSS/expectations_reality.css">
+  <link rel="stylesheet" href="/CSS/main-display.css">
+  <link rel="shortcut icon" href="myicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/CSS/desc-intro.css">
+  <link rel="stylesheet" href="/CSS/social-media.css">
+  <link rel="stylesheet" href="/CSS/footer.css">
+  <title>Personal Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&family=Ubuntu&family=Unbounded&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+
+
+    @media only screen and (max-width: 425px) {
+
+      /* For smartphones */
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+      }
+
+      #img-name h2 {
+        text-align: center;
+        font-size: 13px;
+      }
+
+      #img-name img {
+        margin: 20px 0px;
+      }
+
+      #marquee {
+        font-size: 10px;
+      }
+
+      .blink {
+        animation: blinker 5s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 1;
+        }
+      }
+
+      .intro-cards {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .intro-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #desc-intro {
+        padding: 10px 10px;
+      }
+
+      .intro-images img {
+        width: 70%;
+      }
+
+      #desc-intro-heading {
+        font-size: 7px;
+      }
+
+      .intro-info div {
+        text-align: justify;
+      }
+
+      .img-col-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .main-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #social-media {
+        flex-direction: column;
+      }
+
+      #social-media div {
+        margin: 10px 0px;
+      }
+    }
+
+    @media only screen and (min-width: 425px) and (max-width: 912px) {
+
+      /* For all size tabs */
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .navbar ul {
+        margin-left: 0;
+      }
+
+      
+      #img-name h2 {
+        text-align: center;
+        font-size: 13px;
+      }
+
+      #img-name img {
+        margin: 20px 0px;
+      }
+
+      #marquee {
+        font-size: 13px;
+      }
+
+      .main-intro {
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .intro-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #desc-intro {
+        padding: 10px 10px;
+      }
+
+      .intro-images img {
+        width: 70%;
+      }
+      #desc-intro {
+        padding: 10px 10px;
+      }
+
+      #desc-intro-heading {
+        font-size: 9px;
+      }
+
+      .intro-info div {
+        text-align: justify;
+      }
+
+      .img-col-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      #social-media {
+        flex-direction: column;
+      }
+
+      .social-media-cards {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50vw;
+        height: auto;
+        margin: 10px 0px;
+      }
+
+      .social-handle {
+        display: none;
+      }
+
+    }
+
+    @media only screen and (min-width: 912px) and (max-width: 1024px) {
+
+      /* For small size lappy */
+      .social-media-cards {
+        width: 15vw;
+        height: 25vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 15px;
+      }
+
+      .social-link {
+        font-size: 1rem;
+      }
+
+    }
+
+    @media only screen and (min-width: 1450px) {
+
+      /* For big size lappys */
+      .navbar {
+        font-size: 1.5rem;
+      }
+
+      .logo img {
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+
+      }
+
+      #img-name h2 {
+        text-align: center;
+        font-size: 25px;
+      }
+
+      #img-name img {
+        margin: 20px 0px;
+      }
+
+      #marquee {
+        font-size: 30px;
+      }
+
+      .intro-info p{
+        font-size: 1.2rem;
+      }
+
+      .intro-info h4{
+        font-size: 1.3rem;
+      }
+
+      .social-media-cards {
+        margin: 10px 20px;
+      }
+
+      #social-media-section h2 {
+        color: white;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/images/mylogo.jpg" alt="My Logo">
+    </div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#desc-intro">About Me</a></li>
+      <li><a href="/myBlogs.html">My Blogs</a></li>
+      <li><a href="/contact-us.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <section id="short-intro">
+    <div id="img-name">
+      <img src="/images/myImage.jpg" alt="myImage">
+      <h2 id="green" class="name-blink">Hey there, my name is Khateeb</h2>
+      <h2 id="dark-brown">I welcome you in my digital space</h2>
+      <h2 id="deep-green">I am a tech enthusiast, pursuing CSE(specialisation in Data Science and A.I.)</h2>
+    </div>
+  </section>
+
+  <section id="marquee">
+    <marquee behavior="scroll" direction="left" width="100%" scrollamount="6" class="blink">For College Expectation vs
+      Reality go to "My Blogs" page or <a target="_blank" href="/Blog HTML/expec-vs-reality.html">Click here</a></marquee>
+  </section>
+
+  <section id="tech-learn">
+    <div id="js_container">
+      
+    </div>
+  </section>
+
+  <section id="desc-intro">
+    <div id="desc-intro-heading">
+      <h1>About Me</h1>
+    </div>
+
+    <div id="tech-stack-div" class="intro-cards">
+      <div id="tech-stack-heading" class="intro-heading">
+        <h1>My Tech Stacks</h1>
+      </div>
+      <div id="tech-stacks" class="main-intro">
+        <div class="intro-images">
+          <img src="/images/tech-stack.jpg" alt="My Techs">
+          <img src="/images/tech-stack-2.jpg" alt="My Techs - 2">
+
+        </div>
+        <div id="tech-stack-info" class="intro-info">
+          <div id="development">
+            <h4>Development:</h4>
+            <p>As of now I know <strong>HTML, CSS </strong>at an intermediate level and <strong>JavaScript</strong> at a
+              basic level. I had done 5 basic projects and trying to do spotify clone. Further I will learn front-end
+              frameworks (like <strong>Bootstrap, React.JS, etc..</strong>) and back-end using <strong>MERN
+                Stack.</strong> For more details about web-dev <strong><i><a target="_blank"
+                    href="https://www.w3schools.com/html/">Click here</a></i></strong>.</p>
+          </div>
+          <div id="competetive-programming">
+            <h4>Competetive Programming:</h4>
+            <p>I am in love with the coding questions. I started my <strong>CP</strong> journey in December 2022. I gave
+              my first contest organised by my institute <strong>RUNTIME-TERROR</strong>. After that I continued my
+              <strong>CP</strong> journey at CodeChef. I attended 5 contest till now(28th Jan 2023). My best rank was in
+              <strong>STARTER-76</strong> That is <strong>2032</strong> world-wide. Check out my CodeChef Id:
+              <strong><i><a target="_blank"
+                    href="https://www.codechef.com/users/iamkhateeb_786">iamkhateeb_786</a></i></strong>.
+            </p>
+          </div>
+          <div id="web-3">
+            <h4>A step in Web3.O and Blockchain development:</h4>
+            <p>I don't know very much about Web3.O concept-wise, but topic of subject makes me very interested about
+              this. As of now (Jan 2023), I have knowledge about the history of internet, web1, web2,
+              <strong>web3.O</strong>. Further I will learn <strong>Block-Chain developement ( more precisely will
+                develop dApps and smart contracts)</strong>
+            </p>
+          </div>
+          <div id="AI-ML">
+            <h4>AI enthusiast:</h4>
+            <p>I had intentionally taken the specialisation (in data science and artificial intelligence) branch, bcz I
+              am very interested in this and for sure I will to learn <strong>Artificial intelligence and Machine
+                Learning</strong> further. I had done <strong>python</strong> at a basic level and used some of it's
+              modules.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="intro-cards" id="schooling">
+      <div id="schooling-heading" class="intro-heading">
+        <h1>My School - Jawahar Navodaya Vidyalaya, Araria</h1>
+      </div>
+      <div id="school" class="main-intro" class="img-col-reverse">
+        <div class="intro-info" id="schooling-info">
+          <div>
+            <p>They are run by Navodaya Vidyalaya Samiti, Noida, an autonomous organization under the Department of School Education and Literacy, Ministry of Education (MoE), Government of India. JNVs are fully residential and co-educational schools affiliated to Central Board of Secondary Education (CBSE), New Delhi, with classes from VI to XII standard</p>
+          </div>
+          <div>
+            <p>JNVs exist all over India, with the exception of Tamil Nadu. As of 31 December 2022, 661 JNVs were running with about 2,87,568 students enrolled. In 2022, JNVs were the top-ranked C.B.S.E. schools, having a pass percentage of 99.71% and 98.93% in 10th and 12th grades respectively. To know more about follow the <strong><em><a target="_blank" href="https://en.wikipedia.org/wiki/Jawahar_Navodaya_Vidyalaya">Link</a></em></strong></p>
+          </div>
+          <div>
+            <p>I had cleared Jawahar Navodya Vidyalaya selection test(JNVST) in 2014 and got admitterd. Further passed my matriculation in 2019 with <strong>87.6%.</strong> But unfortunately I dropped J.N.V.A after matriculation for Joint Entrance Examination(JEE) preparation. And the best story of my life ended there</p>
+          </div>
+          <div>
+            <p>Further I got selected in <strong>Super30 - Anand Kumar</strong> for IIT-JEE preparation, but deopped in few months due to unavaibility of online facilities in Co-VID time. I passed my intermediate from local college affiliated by B.S.E.B by <strong> 82.4%</strong>.</p>
+          </div>
+        </div>
+
+        <div class="intro-images">
+          <img src="/images/jnva-1.jpg" alt="JNVA-1">
+          <img src="/images/jnva-2.jpg" alt="JNVA-2">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="intro-cards" id="my-college">
+      <div id="college-heading" class="intro-heading">
+        <h1>My College - Indian Institute of Information technology, Ranchi</h1>
+      </div>
+      <div id="college" class="main-intro">
+        <div class="intro-images">
+          <img src="/Blog Images/main-building.jpg" alt="College - main builduing">
+          <img src="/Blog Images/academic-building.jpg" alt="Academic building">
+          <img src="/Blog Images/college-hostels.jpg" alt="Hostels">
+        </div>
+
+        <div class="intro-info" id="college-info">
+          <div id="college-logo">
+            <img src="/Blog Images/college-logo.png" alt="College Logo">
+          </div>
+          <div>
+            <p><strong>About my college: </strong> Indian Institute of Information Technology, Ranchi (IIIT Ranchi or
+              IIITR), is one of the Indian Institutes of Information Technology, a group of 25 Interdisciplinary
+              Technical Universities of higher education started by Government of India, focused on Information
+              Technology. It is an <strong><i>"Institute of National Importance"</i></strong>, declared by an act of
+              parliament.</p>
+          </div>
+          <div>
+            <p>Here, I am pursuing <strong>Computer Science and Engineering with specialisation in Data Science and Artificial Intelligence.</strong> Apart from the academics it is providing an extraordinary culture in every dimensions.</p>
+          </div>
+          <div id="technical-society-wings">
+            <p>The best part of my college is the top level coding culture which is cultivated by the respected seniors. My college's technical society is <span id="house-of-geeks"><strong><a target="_blank" href="https://houseofgeeks.netlify.app/">House of Geeks(HOG) IIITR</a></strong></span>. The society is consisting of 9 wings which are <a target="_blank" href="https://houseofgeeks.netlify.app/competitive_coding">Competetive Programming wing</a>, <a target="_blank" href="https://houseofgeeks.netlify.app/webd_appd">Software development wing</a>, <a target="_blank" href="https://houseofgeeks.netlify.app/machine_learning">Machine Learning wing</a>, <a target="_blank" href="#">Blockchain development wing</a>, <a target="_blank" href="#">Cyber-Security wing</a>, <a target="_blank" href="https://houseofgeeks.netlify.app/robotics">Robotics wing</a>, <a target="_blank" href="https://houseofgeeks.netlify.app/electronics_iot">Internet of things wing</a>, <a target="_blank" href="https://houseofgeeks.netlify.app/electronics_iot">Core Electronics wing</a> and <a target="_blank" href="https://houseofgeeks.netlify.app/design">Product design and management wing</a>. <br>Currently Shirsha Sengupta Sir is the coordinator of HOG from 2nd year.</p>
+          </div>
+          <div>
+            <p>
+              At the end I am learning stuffs and making the best moments here. 
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="intro-cards" id="extracurriculars">
+      <div id="extracurriculars-heading" class="intro-heading">
+        <h1>My Extra-curriculars</h1>
+      </div>
+      <div class="intro-images">
+        <img src="/images/extra-curricular-1.jpg" alt="Image-1">
+        <img src="/images/extra-curricular-2.jpg" alt="Image-2">
+
+      </div>
+      <div id="extra-curriculars" class="main-intro" class="img-col-reverse">
+        <div class="intro-info" id="extra-curricular-info">
+          <div>
+            <p>
+              Frankly speaking I am not master in any of the things, I am just learning and exploring new things everyday. Talking about my hobbies as of now, I am quite focused at gaining coding skills, learning stuffs and academics. Apart from that for enjoyment I used to play E-sports, sometimes cricket, watch movies, web-series, shows and hangout with friends.
+            </p>
+          </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <section id="social-media-section">
+    <h2>My Social Media Links</h2>
+    <div id="social-media">
+
+      <div class="social-media-cards" id="LinkedIN">
+        <div class="icon-class">
+          <img src="/social-media-icons/linkedIn.png" alt="LinkedIn">
+        </div>
+        <p class="social-handle">LinkedIN</p>
+        <p class="social-link"><a target="_blank" href="https://www.linkedin.com/in/md-khateebur-rab-143862190/">Md Khateebur
+            Rab</a>
+        </p>
+      </div>
+
+      <div class="social-media-cards" id="GitHub">
+        <div class="icon-class">
+          <img src="/social-media-icons/github.png" alt="GitHub">
+        </div>
+        <p class="social-handle">GitHub</p>
+        <p class="social-link"><a target="_blank" href="https://github.com/imkhateeb">Md Khateebur Rab</a></p>
+
+
+      </div>
+
+      <div class="social-media-cards" id="Instagram">
+        <div class="icon-class">
+          <img src="/social-media-icons/instagram.svg" alt="Instagram">
+        </div>
+        <p class="social-handle">Instagram</p>
+        <p class="social-link"><a target="_blank" href="https://www.instagram.com/iamkhateeb_/">iamkhateeb_</a></p>
+      </div>
+
+      <div class="social-media-cards" id="Twitter">
+        <div class="icon-class">
+          <img src="/social-media-icons/twitter.png" alt="twitter">
+        </div>
+        <p class="social-handle">Twitter</p>
+        <p class="social-link"><a target="_blank" href="https://twitter.com/iamkhateeb_">Md Khateebur Rab</a></p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="footer">
+    <p>All rights reserved by Md Khateebur Rab @iamkhateeb_.</p>
+    <p><a href="https://iconscout.com/icons/github" target="_blank">Github Icon</a> by <a
+        href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a></p>
+    <p> Photo by Vanessa Garcia : https://pexels.com/search/professor/ </p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

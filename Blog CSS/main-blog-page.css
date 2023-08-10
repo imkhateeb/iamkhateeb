@@ -1,0 +1,73 @@
+.blogs {
+    width: 80%;
+    margin: 10px auto;
+    background-color: rgb(87, 85, 85);
+    box-shadow: 3px 3px 15px 12px rgb(56, 54, 54);
+    color: white;
+    padding: 15px;
+
+}
+
+.blogs:hover {
+    transform: scale(1.04);
+    transition: transform 0.7s;
+}
+#blogPage-navbar{
+    width: 85%;
+    margin: 10px auto;
+}
+.blog-desc a{
+    color: blue;
+}
+
+.blog-desc-cards {
+    background-color: rgb(56, 54, 54, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+.blog-desc-cards:hover {
+    background-color: rgba(36, 35, 35, 0.6);
+    transition: background-color 0.6s ease-in-out;
+}
+
+.blog-main-image-class img {
+    width: 200px;
+    box-shadow: 3px 3px 20px 12px rgb(27, 27, 27);
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.blog-heading-para-class{
+    padding: 20px;
+}
+
+.blog-heading-para-class a{
+    text-decoration: none;
+}
+.blog-heading{
+    color: white;
+    text-decoration: none;
+    padding: 8px 8px;
+font-family: 'Ubuntu', sans-serif;
+cursor: pointer;
+
+}
+
+.blog-desc{
+    padding: 8px 8px;
+font-family: 'Roboto', sans-serif;
+
+}
+.blog-btn{
+    margin: 8px 8px;
+    padding: 8px 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 15px 5px rgb(7, 7, 7);
+}

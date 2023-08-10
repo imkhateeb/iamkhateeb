@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/main-display.css">
+    <link rel="shortcut icon" href="myicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/desc-intro.css">
+    <link rel="stylesheet" href="/CSS/social-media.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/Blog CSS/main-blog-page.css">
+    <link rel="stylesheet" href="/Blog CSS/expectations_reality.css">
+    <title>College - Expectation vs Reality</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&family=Ubuntu&family=Unbounded&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 425px) {
+            /* For smartphones */
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 0;
+            }
+
+            #exp-reality {
+                flex-direction: column;
+            }
+
+            #expectations,
+            #reality {
+                width: 90%;
+            }
+
+            #social-media {
+                flex-direction: column;
+
+            }
+
+            #social-media div {
+                margin: 10px 0px;
+            }
+        }
+
+        @media only screen and (min-width: 425px) and (max-width: 912px) {
+            /* For Tabs */
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            .navbar ul {
+                margin-left: 0;
+            }
+
+            #exp-reality {
+                flex-direction: column;
+            }
+
+            #expectations,
+            #reality {
+                width: 95%;
+            }
+
+            #social-media {
+                flex-direction: column;
+            }
+
+            .social-media-cards {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 50vw;
+                height: auto;
+                margin: 10px 0px;
+            }
+
+            .social-handle {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (min-width: 912px) and (max-width: 1024px) {
+            /* For small size lappy */
+            .social-media-cards {
+                width: 15vw;
+                height: 25vh;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 15px;
+            }
+
+            .social-link {
+                font-size: 1rem;
+            }
+
+        }
+
+        @media only screen and (min-width: 1450px) {
+            /* For Large lappys */
+            .navbar {
+                font-size: 1.5rem;
+            }
+
+            .logo img {
+                width: 70px;
+                height: 70px;
+                border-radius: 40px;
+
+            }
+            #expectations {
+                width: 49%;
+            }
+            .exp-real-card{
+                padding: 40px;
+            }
+            .exp-real-card img {
+                width: 60%;
+                margin: 10px 0px;
+
+            }
+
+            #expectations h1 {
+                text-decoration: underline;
+            }
+
+            #reality {
+                width: 49%;
+            }
+
+            #reality h1 {
+                text-decoration: underline;
+            }
+
+            .exp-real-card {
+                width: 97%;
+                font-size: 1.5rem;
+            }
+            .social-media-cards{
+                margin: 10px 20px;
+            }
+            #social-media-section h2{
+                color: white;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/images/mylogo.jpg" alt="My Logo">
+        </div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">About Me</a></li>
+            <li><a href="/myBlogs.html">My Blogs</a></li>
+            <li><a href="/contact-us.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="college-life">
+        <img src="/Blog Images/front-exp-reality-img.jpg" alt="Front Image">
+    </section>
+
+
+    <section id="exp-reality">
+
+        <div id="expectations">
+            <h1>EXPECTATIONS</h1>
+            <div id="expectaion-gender-card" class="exp-real-card">
+                <h3>Average gender ratio: </h3>
+                <img src="/expectation-reality-images/exp-1.jpg" alt="Image-1">
+                <p>We were aware about the gender ratio before getting admission, at that time I was expecting the gender ratio would be thought it will be atleast 5:1 ratio, in the worst condition it would be 10:1.</p>
+            </div>
+
+            <hr color="black" class="horizontal-exp-ray-btw-divs">
+
+            <div id="expecetation-hostel-card" class="exp-real-card">
+                <h3>Hostels are in worst condition: </h3>
+                <img src="/expectation-reality-images/exp-2.jpeg" alt="Image-2">
+                <p>Frankly speaking I had no expectation about hostels, because I thought hostels will be as usual. But read about it's reality in reality section.</p>
+            </div>
+
+            <hr color="black" class="horizontal-exp-ray-btw-divs">
+
+            <div id="expectation-area-card" class="exp-real-card">
+                <h3>Area will be very big:</h3>
+                <img src="/expectation-reality-images/exp-3.jpg" alt="Image-3">
+                <p>When I was preparing for JEE at that time my expectaion was, there will be very big campuses and there will be lake inside the campus and many more.</p>
+            </div>
+
+
+            <hr color="black" class="horizontal-exp-ray-btw-divs">
+
+
+            <div id="expectation-professor-card" class="exp-real-card">
+                <h3>Professors's will be very rude:</h3>
+                <img src="/expectation-reality-images/exp-4.jpg" alt="Image-4">
+                <p>Usually we saw in movies that the professors used to be rude and not easily accessible.</p>
+            </div>
+
+
+            <hr color="black" class="horizontal-exp-ray-btw-divs">
+
+
+            <div id="expectation-canteen" class="exp-real-card">
+                <h3>We will enjoy late-night in canteens:</h3>
+                <img src="/expectation-reality-images/exp-5.jpg" alt="Image-5">
+                <p>As we all assume that the collge life will be very adventurous, we will open up and do things which will be funny and stupid like we will hangout late-night with friends.</p>
+            </div>
+
+            <hr color="black" class="horizontal-exp-ray-btw-divs">
+
+
+            <div id="expectation-coding" class="exp-real-card">
+                <h3>We will do coding full time:</h3>
+                <img src="/expectation-reality-images/exp-6.jpg" alt="Image-6">
+                <p>One of the best thing I expected was I will do coding full time. Because I assumed that I will free all the time in the college and will learn technical stuffs all the time.</p>
+            </div>
+
+            <hr color="black" class="horizontal-exp-ray-btw-divs">
+
+
+            <div id="expectation-fooding" class="exp-real-card">
+                <h3>We will get this type of food everyday:</h3>
+                <img src="/expectation-reality-images/exp-7.jpg" alt="Image-7">
+                <p>Like I watched too many college tour videos before getting in the college and from that I got that mess food in colleges are not so good, but in the first 2-3 days of college the fooding was nice and I thought "Yaha ka khana to bdhiya hai :)" </p>
+            </div>
+
+
+        </div>
+
+
+        <div id="reality">
+            <h1>REALITY</h1>
+            <div id="reality-gender-card" class="exp-real-card">
+                <h3>Worst gender ratio:</h3>
+                <img src="/expectation-reality-images/reality-1.jpg" alt="Image-1">
+                <p>Gender ratio in my college is around 20:1.</p>
+            </div>
+
+            <hr color="black" class="horizontal-real-ray-btw-divs">
+
+            <div id="reality-hostel-card" class="exp-real-card">
+                <h3>Hostels are in best condition:</h3>
+                <img src="/expectation-reality-images/reality-2.jpg" alt="Image-2">
+                <p>The hostels are in very good condition and we never thought we will get this type of hostels.</p>
+            </div>
+
+            <hr color="black" class="horizontal-real-ray-btw-divs">
+
+            <div id="reality-area-card" class="exp-real-card">
+                <h3>Area is very small:</h3>
+                <img src="/expectation-reality-images/reality-3.jpg" alt="Image-3">
+                <p>My campus is academic building to hostel and hostel to academic building sometimes mess and nothing else.</p>
+            </div>
+
+            <hr color="black" class="horizontal-real-ray-btw-divs">
+
+            <div id="reality-professor-card" class="exp-real-card">
+                <h3>Professors's are very chill:</h3>
+                <img src="/expectation-reality-images/reality-4.jpg" alt="Image-4">
+                <p>Professors are not so rude for genuine reasons, </p>
+            </div>
+
+            <hr color="black" class="horizontal-real-ray-btw-divs">
+
+            <div id="reality-canteen" class="exp-real-card">
+                <h3>Cantene to ho campus me:</h3>
+                <img src="/expectation-reality-images/reality-5.jpg" alt="Image-5">
+                <p>Cantene ke naam par bahar me ek chai ki tapri hai</p>
+            </div>
+
+
+            <hr color="black" class="horizontal-real-ray-btw-divs">
+
+            <div id="reality-coding" class="exp-real-card">
+                <h3>Doing labs, assignments and BC:</h3>
+                <img src="/expectation-reality-images/reality-6.jpg" alt="Image-6">
+                <p>Ek assignment hota nahi hai doosra mil jata hai :( </p>
+            </div>
+
+
+            <hr color="black" class="horizontal-real-ray-btw-divs">
+
+            <div id="reality-fooding" class="exp-real-card">
+                <h3>Get this only in mess party:</h3>
+                <img src="/expectation-reality-images/reality-7.jpg" alt="Image-7">
+                <p>And this is only available in mess party, one time in a month.</p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <section id="social-media-section">
+        <h2>My Social Media Links</h2>
+        <div id="social-media">
+
+            <div class="social-media-cards" id="LinkedIN">
+                <div class="icon-class">
+                    <img src="/social-media-icons/linkedIn.png" alt="LinkedIn">
+                </div>
+                <p class="social-handle">LinkedIN</p>
+                <p class="social-link"><a target="_blank" href="https://www.linkedin.com/in/md-khateebur-rab-143862190/">Md Khateebur
+                        Rab</a>
+                </p>
+            </div>
+
+            <div class="social-media-cards" id="GitHub">
+                <div class="icon-class">
+                    <img src="/social-media-icons/github.png" alt="GitHub">
+                </div>
+                <p class="social-handle">GitHub</p>
+                <p class="social-link"><a target="_blank" href="https://github.com/imkhateeb">Md Khateebur Rab</a></p>
+
+
+            </div>
+
+            <div class="social-media-cards" id="Instagram">
+                <div class="icon-class">
+                    <img src="/social-media-icons/instagram.svg" alt="Instagram">
+                </div>
+                <p class="social-handle">Instagram</p>
+                <p class="social-link"><a target="_blank" href="https://www.instagram.com/iamkhateeb_/">iamkhateeb_</a></p>
+            </div>
+
+            <div class="social-media-cards" id="Twitter">
+                <div class="icon-class">
+                    <img src="/social-media-icons/twitter.png" alt="twitter">
+                </div>
+                <p class="social-handle">Twitter</p>
+                <p class="social-link"><a target="_blank" href="https://twitter.com/iamkhateeb_">Md Khateebur Rab</a></p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <p>All rights reserved by Md Khateebur Rab @iamkhateeb_.</p>
+        <p><a href="https://iconscout.com/icons/github" target="_blank">Github Icon</a> by <a
+                href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a></p>
+        <p> Photo by Vanessa Garcia : https://pexels.com/search/professor/ </p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
